@@ -1,0 +1,203 @@
+
+:root {
+  --bg-color: #1a1a2e;
+  --text-color: #fff;
+  --accent-color: #413ea5;
+  --gradient: linear-gradient( #150d81,#090505);
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: var(--gradient);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.navbar a {
+  margin-left: 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* Marquee */
+marquee {
+  background: #1b1e51;
+  color: #f4eded;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/* Section */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  margin: 2rem auto;
+}
+
+.carousel {
+  display: flex;
+  
+}
+
+.carousel img {
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #0ef;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ef;
+}
+
+.carousel-buttons button:hover {
+  background: #00c3ff;
+}
+
+
+section h1, section h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  background:rgb(28, 28, 198);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section p {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.card {
+  color: whitesmoke;
+  background: #222244;
+  padding: 2rem;
+  border-radius: var(--radius);
+  width: 300px;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+}
+
+/* Quiz */
+.quiz-form {
+  background: #121230;
+  padding: 2rem;
+  border-radius: var(--radius);
+  max-width: 700px;
+  margin: auto;
+}
+
+.quiz-form .question {
+  margin-bottom: 2rem;
+}
+
+.quiz-form label {
+  display: block;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.quiz-form input[type="submit"] {
+  background: var(--accent-color);
+  color: #000;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.quiz-form input[type="submit"]:hover {
+  transform: scale(1.1);
+  background: #fff;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background: #101020;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #bbb;
+}
