@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Battery Swapping Education</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="styles.css" />
+ 
+</head>
+<body>
+
+  <header>
+    <div class="logo">EV Swapping</div>
+    <nav class="navbar">
+       <a href="#info" class="nav-link text-white">Info</a>
+        <a href="#videos" class="nav-link text-white">Videos</a>
+        <a href="#quiz" class="nav-link text-white">Quiz</a>
+    </nav>
+  </header>
+
+  <marquee behavior="scroll" direction="left">Welcome to the Electric Vehicle Battery Swapping Educational Site - Fast, Smart & Future-Ready!</marquee>
+
+  <section id="info">
+    <h1>What is Battery Swapping?</h1>
+    <p>Battery swapping allows EV owners to replace discharged batteries with fully charged ones in minutes. It's efficient and ideal for fleets and city commutes.</p>
+
+   <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        <img src="Image_1.jpg" alt="Image 1"  >
+        <img src="Image_2.jpg" alt="Image 1"  >
+        <img src="Image_3.png" alt="Image 1"  >
+        <img src="Image_4.png" alt="Image 1">
+        <img src="Image_5.png" alt="Image 1" >
+        
+      </div>
+      <div class="carousel-buttons">
+        <button onclick="moveSlide(-1)">&#8249;</button>
+        <button onclick="moveSlide(1)">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Speed</h3>
+        <p>Swap your battery in under 5 minutes. No more long charging waits.</p>
+      </div>
+      <div class="card">
+        <h3>Convenience</h3>
+        <p>No need for home charging setup. Visit a swap station and go.</p>
+      </div>
+      <div class="card">
+        <h3>Eco-Friendly</h3>
+        <p>Promotes reuse and recycling of batteries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h1>Watch Battery Swapping in Action</h1>
+    <div class="card-container">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/NHlZTKCbgyc" frameborder="0" allowfullscreen></iframe>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/0jNfi3cHVKQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <h1>Test Your Knowledge</h1>
+    <form class="quiz-form">
+      <div class="question">
+        <label>1. What does EV stand for?</label>
+        <label><input type="radio" name="q1" value="Electric Vehicle"> Electric Vehicle</label>
+        <label><input type="radio" name="q1" value="Energy Van"> Energy Van</label>
+      </div>
+      <div class="question">
+        <label>2. How long does a battery swap take?</label>
+        <label><input type="radio" name="q2" value="5 minutes"> 5 minutes</label>
+        <label><input type="radio" name="q2" value="1 hour"> 1 hour</label>
+      </div>
+      <input type="submit" value="Submit Quiz" />
+      <div id="quizScore"></div>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Developed by Ankita Takale  
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
